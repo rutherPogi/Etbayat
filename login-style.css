@@ -1,0 +1,101 @@
+/* Google Font Import - Roboto/Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 800px;
+  width: 560px;
+  background-color: #FFFFFF;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 12px;
+  box-shadow: 5px 7px 10px rgba(0, 0, 0, 0.25);
+}
+
+.etbayat-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.etbayat-logo-text {
+  font-style: Poppins;
+  font-size: 35px;
+  font-weight: 700;
+  color: #D1452B;
+  margin-top: 16px;
+}
+
+.e {
+  color: #D1452B;
+}
+
+.e2 {
+  color: #303030;
+}
+
+.itbayat-logo {
+  height: 250px;
+  width: 250px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.field-input {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 12px;
+}
+
+.field-input label {
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+form input{
+  box-sizing: border-box;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 6px;
+  height: 50px;
+  width: 425px;
+  padding: 1em;
+}
+
+form input:hover {
+  border-width: 2px;
+}
+
+form button {
+  border-style: none;
+  border-radius: 6px;
+  height: 50px;
+  width: 425px;
+  font-style: Poppins;
+  font-size: 16px;
+  color: #FFFFFF;
+  margin-top: 12px;
+  background-color: #DC5B32;
+}
