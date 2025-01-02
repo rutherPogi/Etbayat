@@ -1,0 +1,171 @@
+:root{
+  /* Colors */
+  --body-color: #D9D9D9;
+  --sidebar-color: linear-gradient(to bottom, #FF6433, #F0995A);;
+  --hover-color: #FF8566;
+  --selected-color: #CC4F2A;
+  --text-color1: #D1452B;
+  --text-color2: #e6e6ef;
+}
+
+#sidebar {
+  box-sizing: border-box;
+  height: 100vh;
+  width: 250px;
+  padding: 5px 1em;
+  background-image: var(--sidebar-color); 
+  /* border-right: 1px solid var(--line-color); */
+
+  position: sticky;
+  top: 0;
+  align-self: start;
+  transition: 300ms ease-in-out;
+  overflow: hidden;
+  text-wrap: nowrap;
+}
+
+#sidebar.close {
+  padding: 5px;
+  width: 60px;
+}
+
+#toggle-button {
+  padding: 1em;
+  border: none;
+  border-radius: .5em;
+  background: none;
+  cursor: pointer;
+  
+  svg {
+    /* transition: rotate 150ms ease; */
+    fill: var(--text-color2);
+  } 
+}
+
+#sidebar ul {
+  list-style: none; /* removes the bullets in Unordered Lists */
+}
+
+/* Selected */
+#sidebar ul li.active a{
+  background-color: var(--selected-color);
+}
+
+/* Affects the Home / Survey / ID Generator / Hazard Map Texts */
+#sidebar a, #sidebar .dropdown-button {
+  border-radius: .5em;
+  padding: .85em;
+  text-decoration: none;
+  color: var(--text-color2);
+  display: flex;
+  align-items: center;
+  gap: 1.2em; /* gap between icon and text */
+}
+
+.dropdown-button {
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: none;
+  font: inherit;
+  cursor: pointer;
+}
+
+#sidebar svg {
+  flex-shrink: 0; /* prevent distortion in size */
+  fill: var(--text-color2);
+}
+
+#sidebar a span, #sidebar .dropdown-button span {
+  flex-grow: 1; /* fixed position icon */
+}
+
+/* Changes background color when hovering the Sidebar */
+#sidebar a:hover, #sidebar .dropdown-button:hover {
+  background-color: var(--hover-color);
+}
+
+#sidebar .sub-menu {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: 300ms ease-in-out;
+
+  > div {
+    overflow: hidden;
+  }
+}
+
+#sidebar .sub-menu.show {
+  grid-template-rows: 1fr;
+}
+
+.dropdown-button svg {
+  transition: 200ms ease;
+}
+
+.rotate svg:last-child {
+  rotate: 180deg;
+}
+
+#sidebar .sub-menu a {
+  padding-left: 2em;
+}
+
+
+/*
+.topbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #969696;
+}
+
+.leftside-topbar {
+  width: 250px;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+
+.itbayat-logo {
+  height: 40px;
+  width: 40px;
+  margin-left: 30px;
+  margin-right: 10px;
+
+}
+
+.logo-title {
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 20px;
+  color: var(--text-color);
+}
+
+.middleside-topbar {
+  display: flex;
+  flex: 1;
+}
+
+.rightside-topbar {
+  display: flex;
+  align-items: center;
+  width: 80px;
+}
+
+.bx.bx-user {
+  color: var(--text-color);
+  font-size: 30px;
+  margin-left: 20px;
+}
+
+*/

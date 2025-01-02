@@ -1,0 +1,69 @@
+:root{
+  /* Colors */
+  --body-color: #D9D9D9;
+  --sidebar-color: linear-gradient(to bottom, #FF6433, #F0995A);;
+  --hover-color: #FF8566;
+  --selected-color: #CC4F2A;
+  --text-color1: #D1452B;
+  --text-color2: #e6e6ef;
+  --line-color: #2C83A1;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2.5em;
+}
+
+.container header {
+  color: black;
+  font-family: Poppins;
+  font-weight: 500;
+}
+
+.survey-container{
+  background-color: white;
+
+  border-radius: .5em;
+  height: 700px;
+  width: 100%;
+  box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.4);
+}
+
+.survey-title {
+  border-bottom: 2px solid var(--line-color);
+  padding: 1em;
+}
+
+.container form {
+  margin-top: 20px;
+  padding: 0 1em;
+}
+
+.container form .fields {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+form .fields .input-field {
+  display: flex;
+  flex-direction: column;
+  margin: 0 2em 0 0;
+}
+
+.input-field label {
+  font-size: 12px;
+  font-weight: 600;
+  color: black;
+}
+
+.input-field input, select {
+  outline: none;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  padding: 0 10px;
+  height: 42px;
+  width: 200px;
+}

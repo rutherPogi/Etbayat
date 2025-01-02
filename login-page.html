@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- LINK FOR STYLE.CSS -->
+    <link rel="stylesheet" href="login-style.css">
+
+    <!-- Boxicon CSS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/0b2c93f856.js" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="validation.js" defer></script>
+
+    <title>eTbayat LOGIN Page</title>
+  </head>
+  <body>
+
+    <div class="container">
+      <div class="etbayat-header">
+        <img class="itbayat-logo" src="images/itbayat.jfif">
+        <header class="etbayat-logo-text">
+          <span class="e">e</span><span class="e2">Tbayat</span>
+        </header>
+      </div>
+      <div class="login-form">
+        <p id="error-message"></p>
+        <form id="form" onsubmit="redirectToNextPage(event)">
+          <div class="field-input">
+            <label for="username">Username</label>
+            <input type="text" name="username" id="username" placeholder="Enter your username." required>
+          </div>
+          <div class="field-input">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" placeholder="Enter your password." required>
+          </div>
+          <div class="field-input">
+            <button type="submit">Login</button>
+          </div>
+          <div class="links">
+          </div>
+        </form>
+      </div>
+    </div>
+
+  </body>
+</html>

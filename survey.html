@@ -7,7 +7,9 @@
 
     <!-- LINK FOR CSS -->
     <link rel="stylesheet" href="sidebar-style.css">
+    <link rel="stylesheet" href="survey-style.css">
     <link rel="stylesheet" href="style.css">
+
 
     <!-- LINK FOR Javascript -->
     <script type="text/javascript" src="app.js" defer></script>
@@ -20,26 +22,11 @@
 
     
 
-    <title>eTbayat - Home</title>
+    <title>eTbayat - Survey</title>
 
   </head>
 
   <body>
-    <!-- Font Awesome Icons 
-    <nav class="topbar">
-      <div class="leftside-topbar">
-        <button onclick=toggleSidebar() id="toggle-button">
-          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
-        </button>       
-        <img class="itbayat-logo" src="images/itbayat.jfif">
-        <div class="logo-title">eTbayat</div>
-      </div>
-      <div class="middleside-topbar"></div>
-      <div class="rightside-topbar">
-        <i class='bx bx-user' ></i>
-      </div>
-    </nav> -->
-
     <nav id="sidebar">
       <ul>
         <li>
@@ -48,13 +35,13 @@
           </button> 
           <span class="logo"></span>      
         </li>
-        <li class="active">
+        <li>
           <a href="home.html">
             <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z"/></svg>
             <span>Home</span>
           </a>
         </li>
-        <li>
+        <li class="active">
           <a href="survey.html">
             <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M320-600q17 0 28.5-11.5T360-640q0-17-11.5-28.5T320-680q-17 0-28.5 11.5T280-640q0 17 11.5 28.5T320-600Zm0 160q17 0 28.5-11.5T360-480q0-17-11.5-28.5T320-520q-17 0-28.5 11.5T280-480q0 17 11.5 28.5T320-440Zm0 160q17 0 28.5-11.5T360-320q0-17-11.5-28.5T320-360q-17 0-28.5 11.5T280-320q0 17 11.5 28.5T320-280ZM200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h440l200 200v440q0 33-23.5 56.5T760-120H200Zm0-80h560v-400H600v-160H200v560Zm0-560v160-160 560-560Z"/></svg>
             <span>Survey</span>
@@ -68,8 +55,8 @@
           </button>
           <ul class="sub-menu">
             <div>
-              <li><a href="senior-citizen-id.html">Senior Citizen ID</a></li>
-              <li><a href="solo-parent.html">Solo Parent ID</a></li>
+              <li><a href="senior-citized-id.html">Senior Citizen ID</a></li>
+              <li><a href="solo-parent-id.html">Solo Parent ID</a></li>
               <li><a href="pwd-id.html">PWD ID</a></li>
             </div>
           </ul>
@@ -89,7 +76,74 @@
       </ul>
     </nav>
 
-    <div></div>
+    <div class="container">
+      <div class="survey-container">
+        <div class="survey-title">
+          <header>PROFILE OF FAMILY</header>
+        </div>
+        <form id="family-profile-form">
+          <div class="fields">
+            <div class="input-field">
+              <label>First Name</label>
+              <input type="text" placeholder="Enter your Name">
+            </div>
+            <div class="input-field">
+              <label>Middle Name</label>
+              <input type="text" placeholder="Enter your Name">
+            </div>
+            <div class="input-field">
+              <label>Last Name</label>
+              <input type="text" placeholder="Enter your Name">
+            </div>
+          </div>
+          <div class="fields">
+            <div class="input-field">
+              <label>Birthdate</label>
+              <input type="date">
+            </div>
+            <div class="input-field">
+              <label>Age</label>
+              <input type="text" placeholder="Enter your Name">
+            </div>
+            <div class="input-field">
+              <label>Civil Status</label>
+              <select id="civil-status">
+                <option value="single">Single</option>
+                <option value="married">Married</option>
+                <option value="widowed">Widowed</option>
+              </select>
+            </div>
+            <div class="input-field">
+              <label>Relation to Family Head</label>
+              <select id="relation-family-head">
+                <option value="mother">Mother</option>
+                <option value="father">Father</option>
+                <option value="brother">Brother</option>
+              </select>
+            </div>
+          </div>
+          <div class="fields">
+            <div class="input-field">
+              <label>First Name</label>
+              <input type="text" placeholder="Enter your Name">
+            </div>
+            <div class="input-field">
+              <label>Middle Name</label>
+              <input type="text" placeholder="Enter your Name">
+            </div>
+            <div class="input-field">
+              <label>Last Name</label>
+              <input type="text" placeholder="Enter your Name">
+            </div>
+            <div class="input-field">
+              <label>Last Name</label>
+              <input type="text" placeholder="Enter your Name">
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    
     
 
   </body>

@@ -4,116 +4,17 @@
 
 *{
   font-family: 'Roboto', sans-serif;
+  line-height: 1.5rem;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-:root{
-  /* Colors */
-  --body-color: #D9D9D9;
-  --sidebar-color: linear-gradient(to bottom, #FF6433, #F0995A);;
-  --primary-color: #;
-  --text-color: #D1452B;
-}
-
 body {
-  height: 100vh;
-  padding-top: 60px;
+  min-height: 100vh;
+  min-height: 100dvh;
   background: var(--body-color);
-}
-
-.topbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 60px;
-  display: flex;
-  flex-direction: row;
-  background-color: #FFFFFF;
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-  border-bottom-color: #969696;
-}
-
-.leftside-topbar {
-  width: 250px;
-  display: flex;
-  align-items: center;
-  padding-left: 20px;
-  padding-right: 10px;
-}
-
-/* MENU ICON */
-.bx.bx-menu {
-  color: var(--text-color);
-  font-size: 30px;
-}
-
-
-.itbayat-logo {
-  height: 40px;
-  width: 40px;
-  margin-left: 30px;
-  margin-right: 10px;
-
-}
-
-.logo-title {
-  font-family: Poppins;
-  font-weight: 600;
-  font-size: 20px;
-  color: var(--text-color);
-}
-
-.middleside-topbar {
-  display: flex;
-  flex: 1;
-}
-
-.rightside-topbar {
-  display: flex;
-  align-items: center;
-  width: 80px;
-}
-
-/* USER ICON */
-.bx.bx-user {
-  color: var(--text-color);
-  font-size: 30px;
-  margin-left: 20px;
-}
-
-.sidebar {
-  display: flex;
-  flex-direction: column;
-  position: fixed;
-  top: 60px;
-  left: 0;
-  bottom: 0;
-  width: 250px;
-  background: var(--sidebar-color);
-}
-
-.sidebar-link {
-  height: 60px;
-  display: flex;
-  align-items: center;
-  color: #FFFFFF;
-  padding-left: 20px;
-}
-
-.sidebar-icon {
-  font-size: 30px;
-  margin-right: 20px;
-}
-
-.sidebar-link-text {
-  font-size: 16px;
-  font-weight: 500;
-}
-
-.sidebar-link:hover {
-  background-color: #FA5723;
+  color: var(--text-color2);
+  display: grid;
+  grid-template-columns: auto 1fr; /* auto = fixed size | 1fr = rest of the screen */
 }
